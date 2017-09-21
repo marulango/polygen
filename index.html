@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Polygen v1.0.2</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <div class="row">
+            <div class="col-1">
+                <img src="logo.svg">
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="notice">
+    <div class="container">
+        <div class="row center">
+            <div class="col-10">
+                <p>Important: If you have an Ad or PopUp Blocker, please disable it in order to allow this window to open multiple tabs at once.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row around">
+        <div class="col-2 top-5">
+            <button class="button export-button">Export Both Assets</button>
+        </div>
+        <div class="col-2 top-5">
+            <button class="button export-button">Export Icon</button>
+        </div>
+        <div class="col-2 top-5">
+            <button class="button export-button">Export Pattern</button>
+        </div>
+    </div>
+    <div class="row center">
+
+        <div class="col-4">
+            <div id="iconContainer">
+                <div id="iconOutput"></div>
+            </div>
+        </div>
+        
+
+        <div class="col-12 top-5">
+            <div id="patternContainer">
+                <div id="patternOutput"></div>
+            </div>
+        </div>
+       
+    </div>
+</div>
+
+<script>
+    window.APP = {}
+</script>
+
+<script type="text/javascript" src="js/delaunay.js"></script>
+<script type="text/javascript" src="js/fss.js"></script>
+<script type="text/javascript" src="js/methods.js"></script>
+<script type="text/javascript" src="js/initializeItems.js"></script>
+<script type="text/javascript">
+    itemsInit();
+</script>
+<script type="text/javascript" src="js/exportButtons.js"></script>
+</body>
+</html>
